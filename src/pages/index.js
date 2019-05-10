@@ -1,5 +1,8 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import {Link} from "gatsby"
+
+import resume from "../assets/Imed_Adel_Resume.pdf"
 
 export default () => (<main>
     <Helmet>
@@ -19,5 +22,6 @@ export default () => (<main>
         <meta property="og:locale" content="en" />
         <meta property="og:site_name" content="Imed Adel" />
     </Helmet>
-    <h1 style={{textTransform: 'lowercase'}}>Imed Adel.</h1>
+    <h1 style={{textTransform: 'lowercase'}}>Imed Adel.
+    <small><br/><Link to={resume}>resume</Link>, <a href="https://www.linkedin.com/in/imedadel">linkedin</a>, <a href="https://github.com/ImedAdel">github</a>, <a href="https://twitter.com/Imed_Adel">twitter</a>.</small></h1>
     </main>);

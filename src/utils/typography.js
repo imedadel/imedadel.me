@@ -17,6 +17,10 @@ deYoungTheme.overrideThemeStyles = ({ rhythm }, options) => ({
         fontFamily: 'Fira Sans',
         fontWeight: 900,
         color: '#000'
+    },
+    small: {
+      fontSize: '3rem',
+      paddingLeft: '1rem'
     }
   });
 
