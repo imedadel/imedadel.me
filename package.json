@@ -18,6 +18,7 @@
     "gatsby": "^2.0.111",
     "gatsby-mdx": "^0.6.3",
     "gatsby-plugin-manifest": "^2.0.17",
+    "gatsby-plugin-netlify": "^2.0.17",
     "gatsby-plugin-offline": "^2.0.22",
     "gatsby-plugin-react-helmet": "^3.0.6",
     "gatsby-plugin-sitemap": "^2.1.0",
