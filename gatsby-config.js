@@ -11,6 +11,7 @@ module.exports = {
           },
     },
     plugins: [
+        `gatsby-mdx`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
