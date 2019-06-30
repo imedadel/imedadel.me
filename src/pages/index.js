@@ -26,16 +26,8 @@ const Page = ({ data }) => (
 			<meta property='og:locale' content='en' />
 			<meta property='og:site_name' content='Imed Adel' />
 		</Helmet>
-		<h1 style={{ textTransform: 'lowercase' }}>
-			Imed Adel.
-		</h1>
-			<section>
-				<Link to={resume}>resume</Link>,{' '}
-				<a href='https://www.linkedin.com/in/imedadel'>linkedin</a>,{' '}
-				<a href='https://github.com/ImedAdel'>github</a>,{' '}
-				<a href='https://twitter.com/Imed_Adel'>twitter</a>.
-			</section>
-    {console.log(data)}
+		<h1 style={{ textTransform: 'lowercase' }}>Imed Adel.</h1>
+		{console.log(data)}
 		<section>
 			{data.allMdx.nodes.map(node => (
 				<article>
@@ -45,6 +37,12 @@ const Page = ({ data }) => (
 				</article>
 			))}
 		</section>
+		<p>
+			<Link to={resume}>Resume</Link>,{' '}
+			<a href='https://www.linkedin.com/in/imedadel'>Linkedin</a>,{' '}
+			<a href='https://github.com/ImedAdel'>Github</a>,{' '}
+			<a href='https://twitter.com/Imed_Adel'>Twitter</a>.
+		</p>
 	</main>
 )
 
@@ -53,9 +51,9 @@ const pageQuery = graphql`
 		allMdx {
 			nodes {
 				id
-        frontmatter {
-          title
-        }
+				frontmatter {
+					title
+				}
 			}
 		}
 	}
