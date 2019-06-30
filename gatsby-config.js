@@ -23,8 +23,14 @@ module.exports = {
                             quality: 80,
                             withWebp: true,
 						},
-					},
-				],
+                    },
+                    {
+                        resolve: "gatsby-remark-smartypants",
+                        options: {
+                          dashes: "oldschool",
+                        },
+                      },
+                ],
 			},
 		},
 		{
