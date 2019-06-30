@@ -11,12 +11,18 @@ module.exports = {
 		},
 	},
 	plugins: [
+        `gatsby-plugin-sharp`,
 		{
 			resolve: `gatsby-mdx`,
 			options: {
-				defaultLayouts: {
-					default: require.resolve('./src/components/DefaultPageLayout.js'),
-				},
+				gatsbyRemarkPlugins: [
+					{
+						resolve: `gatsby-remark-images`,
+						options: {
+							maxWidth: 960,
+						},
+					},
+				],
 			},
 		},
 		{
