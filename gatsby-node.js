@@ -19,7 +19,6 @@ exports.createPages = async ({ actions, graphql }) => {
 		}
 	`)
 
-  console.log("TCL: exports.createPages -> data", data)
 	data.allMdx.nodes.forEach(node => {
 		actions.createPage({
 			path: `/${kebabCase(node.frontmatter.title||node.id)}`,
