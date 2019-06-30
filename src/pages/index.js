@@ -1,10 +1,10 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { Link } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 
 import resume from '../assets/Imed_Adel_Resume.pdf'
 
-export default () => (
+const Page = ({ data }) => (
 	<main>
 		<Helmet>
 			<meta charSet='utf-8' />
@@ -28,13 +28,39 @@ export default () => (
 		</Helmet>
 		<h1 style={{ textTransform: 'lowercase' }}>
 			Imed Adel.
-			<small>
-				<br />
+		</h1>
+			<section>
 				<Link to={resume}>resume</Link>,{' '}
 				<a href='https://www.linkedin.com/in/imedadel'>linkedin</a>,{' '}
 				<a href='https://github.com/ImedAdel'>github</a>,{' '}
 				<a href='https://twitter.com/Imed_Adel'>twitter</a>.
-			</small>
-		</h1>
+			</section>
+    {console.log(data)}
+		<section>
+			{data.allMdx.nodes.map(node => (
+				<article>
+					<h2>
+						<Link to={`/`}>{node.frontmatter.title}</Link>
+					</h2>
+				</article>
+			))}
+		</section>
 	</main>
+)
+
+const pageQuery = graphql`
+	{
+		allMdx {
+			nodes {
+				id
+        frontmatter {
+          title
+        }
+			}
+		}
+	}
+`
+
+export default () => (
+	<StaticQuery query={pageQuery} render={data => <Page data={data} />} />
 )
