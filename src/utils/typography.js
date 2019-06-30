@@ -5,8 +5,8 @@ const typography = new Typography({
   baseLineHeight: 1.64,
   headerFontFamily: [`Fira Sans`, `sans-serif`],
   bodyFontFamily: [`Fira Sans`, `sans-serif`],
-  headerColor: `hsla(0,0%,0%,0.9)`, // try `#2E1FFF` later
-  bodyColor: `hsla(0,0%,0%,0.9)`,
+  headerColor: `hsla(0,0%,0%,0.95)`, // try `#2E1FFF` later
+  bodyColor: `hsla(0,0%,0%,0.95)`,
   headerWeight: 900,
   bodyWeight: 400,
   boldWeight: 700,
