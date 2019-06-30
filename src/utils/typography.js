@@ -1,30 +1,5 @@
-import Typography, { scale } from "typography"
-// import deYoungTheme from 'typography-theme-de-young'
+import Typography from "typography"
 
-// deYoungTheme.googleFonts = [
-//     {
-//         name: 'Fira Sans',
-//         styles: ['900']
-//     }
-// ];
-
-// deYoungTheme.overrideThemeStyles = ({ rhythm }, options) => ({
-//     h1: {
-//         fontSize: '6rem',
-//         margin: rhythm(1),
-//         position: 'absolute',
-//         bottom: 0,
-//         fontFamily: 'Fira Sans',
-//         fontWeight: 900,
-//         color: '#000'
-//     },
-//     small: {
-//       fontSize: '3rem',
-//       paddingLeft: '1rem'
-//     }
-//   });
-
-// const typography = new Typography(deYoungTheme)
 const typography = new Typography({
   baseFontSize: `24px`,
   baseLineHeight: 1.64,
