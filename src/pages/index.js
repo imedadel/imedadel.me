@@ -32,7 +32,7 @@ const Page = ({ data }) => (
 			{data.allMdx.nodes.map(node => (
 				<article>
 					<h2>
-						<Link to={`/`}>{node.frontmatter.title}</Link>
+						<Link to={`/${node.frontmatter.slug}`}>{node.headings[0].value}</Link>
 					</h2>
 				</article>
 			))}
@@ -52,7 +52,10 @@ const pageQuery = graphql`
 			nodes {
 				id
 				frontmatter {
-					title
+					slug
+				}
+				headings {
+					value
 				}
 			}
 		}

@@ -1,4 +1,3 @@
-const kebabCase = require('lodash.kebabcase')
 const path = require("path")
 
 exports.createPages = async ({ actions, graphql }) => {
@@ -12,7 +11,7 @@ exports.createPages = async ({ actions, graphql }) => {
 					}
 					timeToRead
 					frontmatter {
-						title
+						slug
 					}
 				}
 			}
@@ -21,7 +20,7 @@ exports.createPages = async ({ actions, graphql }) => {
 
 	data.allMdx.nodes.forEach(node => {
 		actions.createPage({
-			path: `/${kebabCase(node.frontmatter.title||node.id)}`,
+			path: `/${node.frontmatter.slug}`,
 			component: path.resolve(`./src/components/DefaultPageLayout.js`),
 			context: {
 				node
