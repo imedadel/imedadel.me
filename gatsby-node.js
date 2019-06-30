@@ -12,6 +12,10 @@ exports.createPages = async ({ actions, graphql }) => {
 					timeToRead
 					frontmatter {
 						slug
+						desc
+					}
+					headings {
+						value
 					}
 				}
 			}
