@@ -6,7 +6,7 @@ export default ({ pageContext: {node} }) => {
 	// comment
 	return (
 	<main>
-		<Link to={`/`}><h2 style={{ textTransform: 'lowercase' }}>Imed Adel.</h2></Link>
+		<Link to={`/`} title={`Go to homepage`} role={`navigation`}><h2>{`<`}</h2></Link>
 		<MDXRenderer>{node.code.body}</MDXRenderer>
 	</main>
 	)
