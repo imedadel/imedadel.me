@@ -29,6 +29,7 @@
     "gatsby-remark-smartypants": "^2.1.0",
     "gatsby-source-filesystem": "^2.1.1",
     "lodash.kebabcase": "^4.1.1",
+    "prism-theme-night-owl": "^1.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",

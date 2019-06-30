@@ -9525,6 +9525,11 @@ pretty-error@^2.1.1:
     renderkid "^2.0.1"
     utila "~0.4"
 
+prism-theme-night-owl@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/prism-theme-night-owl/-/prism-theme-night-owl-1.2.0.tgz#44e65b4305b56243dcd0cd9d0778b9f0b8b20ad5"
+  integrity sha512-Q4h5MqDYnpuNtrlkTT/v7g/FCPRaOSjnlSg0XbMfsUrauNJlptPC49gKTH2JM/ci59Qos3zznytFx9d8qmEW+Q==
+
 private@^0.1.6:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
