@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
 
-import resume from '../assets/Imed_Adel_Resume.pdf'
+import resume from '../assets/ImedAdelResume.pdf'
 
 const Page = ({ data }) => (
 	<main>
