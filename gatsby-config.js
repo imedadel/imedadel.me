@@ -11,7 +11,7 @@ module.exports = {
 		},
 	},
 	plugins: [
-        `gatsby-plugin-sharp`,
+		`gatsby-plugin-sharp`,
 		{
 			resolve: `gatsby-mdx`,
 			options: {
@@ -19,18 +19,24 @@ module.exports = {
 					{
 						resolve: `gatsby-remark-images`,
 						options: {
-                            maxWidth: 960,
-                            quality: 80,
-                            withWebp: true,
+							maxWidth: 960,
+							quality: 80,
+							withWebp: true,
 						},
-                    },
-                    {
-                        resolve: "gatsby-remark-smartypants",
-                        options: {
-                          dashes: "oldschool",
-                        },
-                      },
-                ],
+					},
+					{
+						resolve: 'gatsby-remark-smartypants',
+						options: {
+							dashes: 'oldschool',
+						},
+					},
+					{
+						resolve: 'gatsby-remark-prismjs',
+						options: {
+							inlineCodeMarker: '÷',
+						},
+					},
+				],
 			},
 		},
 		{
