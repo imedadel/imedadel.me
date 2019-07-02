@@ -8,7 +8,7 @@ import resume from '../assets/ImedAdelResume.pdf'
 const Page = ({ data }) => (
 	<main>
 		<SEO />
-		<Link to={`/`} style={{textDecoration: `none`}} title={`Go to homepage`} role={`navigation`}><h2><span role="img" aria-label="Four-Leaf Clover">🍀</span></h2></Link>
+		{/* <Link to={`/`} style={{textDecoration: `none`}} title={`Go to homepage`} role={`navigation`}><h2><span role="img" aria-label="Four-Leaf Clover">🍀</span></h2></Link> */}
 		<h1 style={{ textTransform: 'lowercase' }}>Imed Adel.</h1>
 		{console.log(data)}
 		<section>
