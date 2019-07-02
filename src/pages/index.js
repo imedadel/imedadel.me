@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 
 import SEO from '../components/SEO'
+import { rhythm } from '../utils/typography'
 
 import resume from '../assets/ImedAdelResume.pdf'
 
@@ -9,7 +10,7 @@ const Page = ({ data }) => (
 	<main>
 		<SEO />
 		{/* <Link to={`/`} style={{textDecoration: `none`}} title={`Go to homepage`} role={`navigation`}><h2><span role="img" aria-label="Four-Leaf Clover">🍀</span></h2></Link> */}
-		<h1 style={{ textTransform: 'lowercase' }}>Imed Adel.</h1>
+		<h1 style={{ textTransform: 'lowercase', marginBottom: rhythm(1.5), }}>Imed Adel.</h1>
 		{console.log(data)}
 		<section>
 			{data.allMdx.nodes.map(node => (
