@@ -5,6 +5,7 @@ date: "2019-07-03"
 ---
 
 # All The Ways to Import Images in Gatsby
+
 > A guide for importing images in your Gatsby project.
 
 ## Using Gatsby Image
@@ -24,7 +25,7 @@ And add them to the `plugins` array in `gatsby-config.js`:
 ```js
 module.exports = {
   plugins: [
-    `gatsby-transformer-sharp`, 
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     ... // your others plugins
   ]
@@ -43,7 +44,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`, 
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     ... // your others plugins
   ]
@@ -55,8 +56,8 @@ module.exports = {
 In order to query images using GraphQL in your pages and your components, you will have to import `gatsby-image` at the top of the file. In this example, I am going to assume that you are using a [`StaticQuery`](https://www.gatsbyjs.org/docs/static-query/) for your component or your page. If that's the case, I highlighy recommend using the [`StaticQuery` snippet for VS Code](/gatsby-staticquery-vs-code-snippet).
 
 ```js
-import React from 'react'
-import Img from 'gatsby-image' // highlight-line
+import React from "react"
+import Img from "gatsby-image" // highlight-line
 ```
 
 then query your image using GraphQL
@@ -105,25 +106,29 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const OurComponent = ({ data }) => (
-  <main>
-    <p>A fluid image: </p>
-    <Img fluid={data.nameOfFluidImage.childImageSharp.fluid} />
-    
-    <p>A fixed image: </p>
-    <Img fixed={data.nameOfFixedImage.childImageSharp.fixed} />
-  </main>
- )
+	<main>
+		<p>A fluid image: </p>
+		<Img fluid={data.nameOfFluidImage.childImageSharp.fluid} />
+
+		<p>A fixed image: </p>
+		<Img fixed={data.nameOfFixedImage.childImageSharp.fixed} />
+	</main>
+)
 
 const ourQuery = graphql`
-  query {
-		nameOfFluidImage: file(relativePath: { eq: "relativePathToYourImage.png" }) {
+	query {
+		nameOfFluidImage: file(
+			relativePath: { eq: "relativePathToYourImage.png" }
+		) {
 			childImageSharp {
 				fluid(maxHeight: 200) {
 					...GatsbyImageSharpFluid
 				}
 			}
 		}
-    nameOfFixedImage: file(relativePath: { eq: "relativePathToYourImage.png" }) {
+		nameOfFixedImage: file(
+			relativePath: { eq: "relativePathToYourImage.png" }
+		) {
 			childImageSharp {
 				fixed(height: 200) {
 					...GatsbyImageSharpFixed
@@ -133,7 +138,9 @@ const ourQuery = graphql`
 	}
 `
 
-export default () => (<StaticQuery query={ourQuery} render={data => <OurComponent data={data} />} />)
+export default () => (
+	<StaticQuery query={ourQuery} render={data => <OurComponent data={data} />} />
+)
 ```
 
 ## Using Webpack Import
@@ -154,14 +161,14 @@ import myImage from "./pathToTheImage.png" // highlight-line
 Afterwards, you can treat it as a normal path:
 
 ```jsx
-const MyComponent = () => (<img src={myImage} alt="A bunch of 0s and 1s" />)
+const MyComponent = () => <img src={myImage} alt="A bunch of 0s and 1s" />
 ```
 
 Note that you can achieve the same thing in your CSS files, without having to import it:
 
 ```css
 .decorativeImage {
-  background-image: url(./pathToTheImage.png);
+	background-image: url(./pathToTheImage.png);
 }
 ```
 
@@ -172,7 +179,7 @@ This way, you can add your background images to your Gatsby project---although u
 As the number of images grows, importing every single image can become tedious. Hopefully, an easier solution is using an inline `require` like so:
 
 ```jsx
-const AnotherComponent = () => (<img src={require('./pathToTheImage.png')} />)
+const AnotherComponent = () => <img src={require("./pathToTheImage.png")} />
 ```
 
 ### Require All Images
@@ -180,14 +187,16 @@ const AnotherComponent = () => (<img src={require('./pathToTheImage.png')} />)
 Similar to the import method above, you can require all images using this function:
 
 ```js
-const images = require.context('../images', true)
+const images = require.context("../images", true)
 const imagePath = name => images(name, true)
 ```
 
 Specify where the images are stored and then use it like so
 
 ```jsx
-const AndAnotherComponent = () => (<img src={imagePath('./pathToTheImage.png')} />)
+const AndAnotherComponent = () => (
+	<img src={imagePath("./pathToTheImage.png")} />
+)
 ```
 
 ## Using The Static Folder
@@ -195,7 +204,7 @@ const AndAnotherComponent = () => (<img src={imagePath('./pathToTheImage.png')} 
 Finally, if you don't have for all of this and you don't really worry about optimization 🙄, you can add a `static` folder to the root of your project, add any images you want there, and then easily reference images like so:
 
 ```jsx
-const Yup = () => (<img src="pathToTheImage.png" />)
+const Yup = () => <img src="pathToTheImage.png" />
 ```
 
 Note that the `static` folder is considered the base for your image's path.

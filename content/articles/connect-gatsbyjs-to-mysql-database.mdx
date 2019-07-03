@@ -8,7 +8,7 @@ date: "2019-07-02"
 
 > While migrating your PHP website to a JAMStack site, you can find yourself struggling with the huge MySQL database that you have been maintaining for years. Fortunately, GatsbyJS offers a plugin to easily fetch all the data you need from your MySQL database.
 
-## Install `gatsby-source-mysql` 
+## Install `gatsby-source-mysql`
 
 In your project, add `gatsby-source-mysql` by running:
 
@@ -20,31 +20,31 @@ Then, you will need to add the plugin to `gatsby-config.js` with the appropriate
 
 ```js
 module.exports = {
-  plugins: [
-    {
-      resolve: `gatsby-source-mysql`,
-      options: {
-        connectionDetails: {
-          host: `localhost`,
-          user: `db-username`,
-          password: `db-password`,
-          database: `world`,
-        },
-        queries: [
-          {
-            statement: `SELECT * FROM country`,
-            idFieldName: `Code`,
-            name: `country`,
-          }
-        ]
-      }
-    }
-    // ... other plugins
-  ]
+	plugins: [
+		{
+			resolve: `gatsby-source-mysql`,
+			options: {
+				connectionDetails: {
+					host: `localhost`,
+					user: `db-username`,
+					password: `db-password`,
+					database: `world`,
+				},
+				queries: [
+					{
+						statement: `SELECT * FROM country`,
+						idFieldName: `Code`,
+						name: `country`,
+					},
+				],
+			},
+		},
+		// ... other plugins
+	],
 }
 ```
 
-The `statement` field is where you will put your query. It can be as simple as `SELECT * FROM country` or it can be as long and complicated as you wish. 
+The `statement` field is where you will put your query. It can be as simple as `SELECT * FROM country` or it can be as long and complicated as you wish.
 
 If the query's length make it illegible, you can assign it to a constant before `module.exports`.
 
@@ -52,31 +52,30 @@ If the query's length make it illegible, you can assign it to a constant before 
 const myQuery = `SELECT * FROM country`
 
 module.exports = {
-  plugins: [
-    {
-      resolve: `gatsby-source-mysql`,
-      options: {
-        connectionDetails: {
-          host: `localhost`,
-          user: `db-username`,
-          password: `db-password`,
-          database: `world`,
-        },
-        queries: [
-          {
-            statement: myQuery,
-            idFieldName: `Code`,
-            name: `country`,
-          }
-        ]
-      }
-    }
-    // ... other plugins
-  ]
+	plugins: [
+		{
+			resolve: `gatsby-source-mysql`,
+			options: {
+				connectionDetails: {
+					host: `localhost`,
+					user: `db-username`,
+					password: `db-password`,
+					database: `world`,
+				},
+				queries: [
+					{
+						statement: myQuery,
+						idFieldName: `Code`,
+						name: `country`,
+					},
+				],
+			},
+		},
+		// ... other plugins
+	],
 }
 ```
 
 `idFieldName` must be returned by the query defined in `statement`.
 
 The `name` field will be used for naming your node in GraphQL.
-
