@@ -8,4 +8,24 @@ slug: import-images-gatsby-guide
 ## Using Gatsby Image
 For this method, you will have to import every image one-by-one, however, your images will be processed and optimized for the best performance.
 
-First, install `gatsby-image`, ... つづく
+First, install `gatsby-image`, `gatsby-transformer-sharp` and `gatsby-plugin-sharp` using the command:
+
+```sh
+yarn add gatsby-image gatsby-transformer-sharp gatsby-plugin-sharp
+```
+
+And add them to the `plugins` array in `gatsby-config.js`:
+
+```js
+module.exports = {
+  plugins: [
+    `gatsby-transformer-sharp`, 
+    `gatsby-plugin-sharp`,
+    ... // your others plugins
+  ]
+}
+```
+
+Also, don't forget to add your images
+
+... つづく
