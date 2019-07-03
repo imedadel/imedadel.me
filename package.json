@@ -8,6 +8,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "format:md": "prettier --write content/**/*.{md,mdx}",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
@@ -44,5 +46,17 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "prettier": "1.18.2"
+  },
+  "prettier": {
+    "endOfLine": "lf",
+    "semi": false,
+    "singleQuote": false,
+    "jsxSingleQuote": false,
+    "useTabs": true,
+    "bracketSpacing": true,
+    "trailingComma": "es5"
   }
 }
