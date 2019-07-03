@@ -7,11 +7,14 @@ import { rhythm } from '../utils/typography'
 import resume from '../assets/ImedAdelResume.pdf'
 
 const Page = ({ data }) => (
-	<main>
+	<>
+	<header>
 		<SEO />
-		{/* <Link to={`/`} style={{textDecoration: `none`}} title={`Go to homepage`} role={`navigation`}><h2><span role="img" aria-label="Four-Leaf Clover">🍀</span></h2></Link> */}
 		<h1 style={{ textTransform: 'lowercase', marginBottom: rhythm(1.5), }}>Imed Adel.</h1>
-		{console.log(data)}
+	</header>
+	<main>
+		{/* <Link to={`/`} style={{textDecoration: `none`}} title={`Go to homepage`} role={`navigation`}><h2><span role="img" aria-label="Four-Leaf Clover">🍀</span></h2></Link> */}
+		{/* {console.log(data)} */}
 		<section>
 			{data.allMdx.nodes.map(node => (
 				<article>
@@ -21,13 +24,14 @@ const Page = ({ data }) => (
 				</article>
 			))}
 		</section>
-		<p>
+	</main>
+		<footer>
 			<Link to={resume}>Resume</Link>,{' '}
 			<a href='https://www.linkedin.com/in/imedadel'>Linkedin</a>,{' '}
 			<a href='https://github.com/ImedAdel'>Github</a>,{' '}
 			<a href='https://twitter.com/Imed_Adel'>Twitter</a>.
-		</p>
-	</main>
+		</footer>
+		</>
 )
 
 const pageQuery = graphql`
