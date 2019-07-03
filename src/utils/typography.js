@@ -12,7 +12,7 @@ const typography = new Typography({
   boldWeight: 700,
   scaleRatio: 4,
   overrideStyles: ({rhythm}, options, styles) => ({
-    main: {
+    "main, header, footer": {
       maxWidth: rhythm(24),
       margin: `${rhythm(2)} auto`,
     },
