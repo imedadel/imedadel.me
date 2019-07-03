@@ -1,11 +1,11 @@
-import React from 'react'
-import { MDXRenderer } from 'gatsby-mdx'
-import { Link } from 'gatsby'
+import React from "react"
+import { MDXRenderer } from "gatsby-mdx"
+import { Link } from "gatsby"
 
-import SEO from '../components/SEO'
-import { rhythm } from '../utils/typography'
+import SEO from "../components/SEO"
+import { rhythm } from "../utils/typography"
 
-import resume from '../assets/ImedAdelResume.pdf'
+import resume from "../assets/ImedAdelResume.pdf"
 
 export default ({ pageContext: { node } }) => {
 	// comment
@@ -23,17 +23,17 @@ export default ({ pageContext: { node } }) => {
 					title={`Go to homepage`}
 					role={`navigation`}
 				>
-					<h2 style={{ textTransform: 'lowercase' }}>Imed Adel.</h2>
+					<h2 style={{ textTransform: "lowercase" }}>Imed Adel.</h2>
 				</Link>
 			</header>
 			<main>
 				<MDXRenderer>{node.code.body}</MDXRenderer>
 			</main>
 			<footer>
-				<Link to={resume}>Resume</Link>,{' '}
-				<a href='https://www.linkedin.com/in/imedadel'>Linkedin</a>,{' '}
-				<a href='https://github.com/ImedAdel'>Github</a>,{' '}
-				<a href='https://twitter.com/Imed_Adel'>Twitter</a>.
+				<Link to={resume}>Resume</Link>,{" "}
+				<a href="https://www.linkedin.com/in/imedadel">Linkedin</a>,{" "}
+				<a href="https://github.com/ImedAdel">Github</a>,{" "}
+				<a href="https://twitter.com/Imed_Adel">Twitter</a>.
 			</footer>
 		</>
 	)
