@@ -32,7 +32,7 @@ const Page = ({ data }) => (
 
 const pageQuery = graphql`
 	{
-		allMdx (sort: {order: DESC, fields: date}){
+		allMdx (sort: {order: DESC, fields: frontmatter___date}){
 			nodes {
 				id
 				frontmatter {
