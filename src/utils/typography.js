@@ -34,6 +34,9 @@ const typography = new Typography({
 			paddingRight: `1em`,
 			paddingLeft: `1em`,
 		},
+		"code[class*=language-], pre[class*=language-]": {
+			borderRadius: `0.125em`,
+		},
 		"@media (min-width:480px)": {
 			html: {
 				fontSize: `18px`,
