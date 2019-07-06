@@ -35,8 +35,8 @@ const typography = new Typography({
 			paddingLeft: `1em`,
 		},
 		"code[class*=language-], pre[class*=language-]": {
-			borderRadius: `0.125em`,
-			fontFamily: `"Dank Mono","Victor Mono","Fira Code",Consolas,Monaco,Andale Mono,"Ubuntu Mono",monospace`,
+			borderRadius: `0.125em !important`,
+			fontFamily: `"Dank Mono","Victor Mono","Fira Code",Consolas,Monaco,Andale Mono,"Ubuntu Mono",monospace  !important`,
 		},
 		"@media (min-width:480px)": {
 			html: {
