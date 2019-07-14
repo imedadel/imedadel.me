@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import SEO from "../components/SEO"
 import { rhythm } from "../utils/typography"
 
-import resume from "../assets/ImedAdelResume.pdf"
+import resume from "../assets/Imed_Adel_Resume.pdf"
 
 export default ({ pageContext: { node } }) => {
 	// comment
@@ -30,7 +30,7 @@ export default ({ pageContext: { node } }) => {
 				<MDXRenderer>{node.code.body}</MDXRenderer>
 			</main>
 			<footer>
-				<Link to={resume}>Resume</Link>,{" "}
+				<a href={resume}>Resume</a>,{" "}
 				<a href="https://www.linkedin.com/in/imedadel">Linkedin</a>,{" "}
 				<a href="https://github.com/ImedAdel">Github</a>,{" "}
 				<a href="https://twitter.com/Imed_Adel">Twitter</a>.
