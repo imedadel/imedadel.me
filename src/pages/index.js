@@ -4,7 +4,7 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import SEO from "../components/SEO"
 import { rhythm } from "../utils/typography"
 
-import resume from "../assets/ImedAdelResume.pdf"
+import resume from "../assets/Imed_Adel_Resume.pdf"
 
 const Page = ({ data }) => (
 	<>
@@ -30,7 +30,7 @@ const Page = ({ data }) => (
 			</section>
 		</main>
 		<footer>
-			<Link to={resume}>Resume</Link>,{" "}
+			<a href={resume}>Resume</a>,{" "}
 			<a href="https://www.linkedin.com/in/imedadel">Linkedin</a>,{" "}
 			<a href="https://github.com/ImedAdel">Github</a>,{" "}
 			<a href="https://twitter.com/Imed_Adel">Twitter</a>.
