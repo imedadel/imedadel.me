@@ -55,7 +55,7 @@ A couple of notes here:
 - `combineReducers` is used to combine all the reducer function that we are importing.
 - `initialState` is not obligatory, but it depends on your needs. If you will select a certain element from the store when your app mounts, then you need to specify an initial value for the element.
 - Elements of your store will have the reducer function name. To change that, you can combine your reducers using
-  `jsx const combinedReducers = combineReducers({ count: reducers.setCount, total: reducers.setTotal, })`
+  `jsx ÷ const combinedReducers = combineReducers({ count: reducers.setCount, total: reducers.setTotal, })`
 
 Then, in both your `gatsby-ssr.js` and `gatsby-browser.js` files, add the following code
 
