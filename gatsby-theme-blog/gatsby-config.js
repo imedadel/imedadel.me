@@ -1,6 +1,8 @@
+const path = require('path')
+
 module.exports = {
 	siteMetadata: {
-		title: 'Imed Adel\'s Blog',
+		title: "Imed Adel's Blog",
 		description: 'The personal blog of Imed Adel',
 		author: 'Imed Adel',
 		siteUrl: 'http:s://imedadel.me',
@@ -9,16 +11,17 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-mdx',
 			options: {
-				extensions: [ '.mdx', '.md' ],
-				remarkPlugins,
-			}
+				extensions: ['.mdx', '.md'],
+			},
 		},
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				name: 'posts',
 				path: path.resolve('content/blog'),
-			}
+			},
 		},
-	]
+	],
 }
+
+console.log(path.resolve('content/blog'))
