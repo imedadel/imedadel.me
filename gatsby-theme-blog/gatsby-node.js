@@ -8,7 +8,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 	actions.createNodeField({
 		name: 'slug',
 		node,
-		value: value.replace(/\\+/g, ``).replace(/\/+/g, `/`).replace(/\/$/, ``),
+		value: value
+			.replace(/\\+/g, ``)
+			.replace(/\/+/g, `/`)
+			.replace(/\/$/, ``),
 	})
 }
 
@@ -33,6 +36,14 @@ exports.createPages = async ({ graphql, actions }) => {
 			}
 		}
 	`)
+
+	actions.createPage({
+		path: `/blog`,
+		component: require.resolve(`./src/templates/blog.js`),
+		context: {
+			nodes: data.allMdx.nodes,
+		},
+	})
 
 	data.allMdx.nodes.forEach(node => {
 		actions.createPage({
