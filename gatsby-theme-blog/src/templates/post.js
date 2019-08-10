@@ -10,8 +10,22 @@ import { Link } from 'gatsby'
 const Post = ({ pageContext: { node } }) => {
 	// comment
 	return (
-		<>
-			<header>
+		<div
+			style={{
+				fontSize: `2vw`,
+				maxWidth: `64vw`,
+				margin: `auto`,
+				fontFamily: `system-ui`,
+				webkitFontSmoothing: `antialiased`,
+				textRendering: `optimizeLegibility`,
+			}}
+		>
+			<header
+				style={{
+					display: `flex`,
+					justifyContent: `space-between`
+				}}
+			>
 				{/* <SEO
 					title={node.headings[0].value}
 					description={node.frontmatter.desc}
@@ -19,11 +33,25 @@ const Post = ({ pageContext: { node } }) => {
 				/> */}
 				<Link
 					to={`/`}
-					style={{ textDecoration: `none`, marginBottom: `1.5rem` }}
+					style={{
+						textDecoration: `none`,
+						marginBottom: `1.5rem`,
+					}}
 					title={`Go to homepage`}
 					role={`navigation`}
 				>
-					<h2 style={{ textTransform: 'lowercase' }}>Imed Adel.</h2>
+					<h2>Imed Adel</h2>
+				</Link>
+				<Link
+					to={`/blog`}
+					style={{
+						textDecoration: `none`,
+						marginBottom: `1.5rem`,
+					}}
+					title={`Go to homepage`}
+					role={`navigation`}
+				>
+					<h2>Blog</h2>
 				</Link>
 			</header>
 			<main>
@@ -35,7 +63,7 @@ const Post = ({ pageContext: { node } }) => {
 				<a href='https://github.com/ImedAdel'>Github</a>,{' '}
 				<a href='https://twitter.com/Imed_Adel'>Twitter</a>.
 			</footer>
-		</>
+		</div>
 	)
 }
 
