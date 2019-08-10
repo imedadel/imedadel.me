@@ -7,7 +7,7 @@ import { Link } from 'gatsby'
 
 // import resume from '../assets/Imed_Adel_Resume.pdf'
 
-export default ({ pageContext: { node } }) => {
+const Post = ({ pageContext: { node } }) => {
 	// comment
 	return (
 		<>
@@ -38,3 +38,5 @@ export default ({ pageContext: { node } }) => {
 		</>
 	)
 }
+
+export default Post
