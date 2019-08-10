@@ -34,6 +34,7 @@ const Page = ({ pageContext: { nodes } }) => (
 								{node.headings[0].value}
 							</Link>
 						</h2>
+						<p>{node.frontmatter.desc}</p>
 					</article>
 				))}
 			</section>
