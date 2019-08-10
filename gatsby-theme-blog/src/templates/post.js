@@ -13,9 +13,9 @@ const Post = ({ pageContext: { node } }) => {
 		<div
 			style={{
 				fontSize: `2vw`,
-				maxWidth: `64vw`,
+				width: `64vw`,
 				margin: `auto`,
-				fontFamily: `system-ui`,
+				fontFamily: `Manrope, system-ui`,
 				webkitFontSmoothing: `antialiased`,
 				textRendering: `optimizeLegibility`,
 			}}

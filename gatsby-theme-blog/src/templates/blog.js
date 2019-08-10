@@ -7,7 +7,16 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 // import resume from '../assets/Imed_Adel_Resume.pdf'
 
 const Page = ({ pageContext: { nodes } }) => (
-	<>
+	<div
+			style={{
+				fontSize: `2vw`,
+				width: `64vw`,
+				margin: `auto`,
+				fontFamily: `Manrope, system-ui`,
+				webkitFontSmoothing: `antialiased`,
+				textRendering: `optimizeLegibility`,
+			}}
+		>
 		<header>
 			{/* <SEO /> */}
 			<h1 style={{ textTransform: 'lowercase', marginBottom: `1.5rem` }}>
@@ -35,7 +44,7 @@ const Page = ({ pageContext: { nodes } }) => (
 			<a href='https://github.com/ImedAdel'>Github</a>,{' '}
 			<a href='https://twitter.com/Imed_Adel'>Twitter</a>.
 		</footer>
-	</>
+	</div>
 )
 
 export default Page
