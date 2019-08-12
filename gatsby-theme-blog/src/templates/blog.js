@@ -1,24 +1,13 @@
 /** @jsx jsx */
 import React from 'react'
 import { Link } from 'gatsby'
-import {
-	Layout,
-	Main,
-	Header,
-	Container,
-	Styled,
-	jsx,
-} from 'theme-ui'
-
-// import SEO from '../components/SEO'
-// import { rhythm } from '../utils/typography'
-
-// import resume from '../assets/Imed_Adel_Resume.pdf'
+import { Layout, Main, Header, Container, Styled, jsx } from 'theme-ui'
+import Seo from 'gatsby-theme-seo/src/components/Seo'
 
 const Page = ({ pageContext: { nodes } }) => (
 	<Layout>
 		<Header>
-			{/* <SEO /> */}
+			<Seo title='Blog' slug='blog' />
 			<Styled.h1>Imed Adel.</Styled.h1>
 		</Header>
 		<Main>

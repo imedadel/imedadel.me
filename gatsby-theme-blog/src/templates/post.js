@@ -3,22 +3,17 @@ import React from 'react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { Link } from 'gatsby'
 import { Layout, Main, Header, Container, jsx } from 'theme-ui'
-
-// import SEO from '../components/SEO'
-// import { rhythm } from '../utils/typography'
-
-// import resume from '../assets/Imed_Adel_Resume.pdf'
+import Seo from 'gatsby-theme-seo/src/components/Seo'
 
 const Post = ({ pageContext: { node } }) => {
-	// comment
 	return (
 		<Layout>
 			<Header>
-				{/* <SEO
+				<Seo
 					title={node.headings[0].value}
 					description={node.frontmatter.desc}
-					slug={node.frontmatter.slug}
-				/> */}
+					slug={node.fields.slug}
+				/>
 				<Link
 					to={`/`}
 					sx={{
