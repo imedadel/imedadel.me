@@ -24,7 +24,7 @@ const Post = ({ pageContext: { node } }) => {
 					sx={{
 						textDecoration: `none`,
 						marginBottom: 1,
-						color: 'primary'
+						color: 'primary',
 					}}
 					title={`Go to homepage`}
 					role={`navigation`}
@@ -36,7 +36,7 @@ const Post = ({ pageContext: { node } }) => {
 					sx={{
 						textDecoration: `none`,
 						marginBottom: 1,
-						color: 'primary'
+						color: 'primary',
 					}}
 					title={`Go to blog page`}
 					role={`navigation`}
@@ -46,7 +46,7 @@ const Post = ({ pageContext: { node } }) => {
 			</Header>
 			<Main>
 				<Container>
-				<MDXRenderer>{node.body}</MDXRenderer>
+					<MDXRenderer>{node.body}</MDXRenderer>
 				</Container>
 			</Main>
 		</Layout>

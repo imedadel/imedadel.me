@@ -76,12 +76,21 @@ const theme = {
 					},
 				},
 			},
-			'.description': {
+			'.desc': {
 				margin: 0,
-				fontSize: 3,
+				fontSize: 7,
 				borderLeft: '1px solid',
 				borderBottom: '1px solid',
-				borderRadiusBottomLeft: '4px'
+				borderBottomLeftRadius: 12,
+				paddingLeft: 12,
+				marginLeft: 12,
+				paddingBottom: 6,
+				paddingTop: 2,
+				marginTop: 10,
+				marginBottom: 10,
+				p: {
+					margin: 0,
+				}
 			},
 		},
 		article: {
