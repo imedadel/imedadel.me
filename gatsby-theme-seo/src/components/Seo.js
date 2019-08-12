@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 
 const Seo = ({ title, desc, slug }) => (
-	<Helmet>
+	<Helmet defer={false}>
 		<meta charSet="utf-8" />
 		<title>{title ? `${title} — Imed Adel` : `Imed Adel`}</title>
 		<link rel="canonical" href="https://imedadel.me" />
