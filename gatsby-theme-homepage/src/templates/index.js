@@ -15,7 +15,7 @@ const Page = () => (
 				<Link to={'/blog'} sx={{color: 'primary', textDecoration: 'none'}}>Blog</Link>
 				<Link sx={{color: 'primary', textDecoration: 'none'}}>Area 51</Link>
 				<Link sx={{color: 'primary', textDecoration: 'none'}}>Portfolio</Link>
-				<Link sx={{color: 'primary', textDecoration: 'none'}}>Contact</Link>
+				<a href="mailto:aadelimed@gmail.com" sx={{color: 'primary', textDecoration: 'none'}}>Contact</a>
 			</Flex>
 			<Flex sx={{ fontSize: 8, marginTop: 4, justifyContent: 'space-between' }}>
 				<a href={resume} sx={{color: 'primary', textDecoration: 'none'}}>Resume</a>
