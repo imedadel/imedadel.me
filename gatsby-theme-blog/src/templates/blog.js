@@ -28,7 +28,7 @@ const Page = ({ pageContext: { nodes } }) => (
 			{/* {console.log(data)} */}
 			<Container>
 				{nodes.map(node => (
-					<article key={`d`}>
+					<article key={node.fields.slug}>
 						<h2>
 							<Link sx={{ color: 'primary' }} to={`${node.fields.slug}`}>
 								{node.headings[0].value}
