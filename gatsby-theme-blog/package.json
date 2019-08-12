@@ -22,7 +22,10 @@
 		"@mdx-js/mdx": "^1.2.2",
 		"@mdx-js/react": "^1.2.2",
 		"gatsby-plugin-mdx": "^1.0.23",
+		"gatsby-remark-prismjs": "^3.3.5",
 		"gatsby-source-filesystem": "^2.1.9",
-		"gatsby-theme-interface": "*"
+		"gatsby-theme-interface": "*",
+		"prism-theme-night-owl": "^1.2.0",
+		"prismjs": "^1.17.1"
 	}
 }
