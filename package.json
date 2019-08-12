@@ -4,6 +4,7 @@
 		"www",
 		"gatsby-theme-blog",
 		"gatsby-theme-homepage",
-		"gatsby-theme-interface"
+		"gatsby-theme-interface",
+		"gatsby-theme-seo"
 	]
 }
