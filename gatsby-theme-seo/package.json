@@ -12,5 +12,9 @@
 		"gatsby": "^2.13.59",
 		"react": "^16.9.0",
 		"react-dom": "^16.9.0"
+	},
+	"dependencies": {
+		"gatsby-plugin-react-helmet": "^3.1.3",
+		"react-helmet": "^5.2.1"
 	}
 }
