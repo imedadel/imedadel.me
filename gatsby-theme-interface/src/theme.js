@@ -59,13 +59,16 @@ const theme = {
 			maxWidth: 'max',
 			width: 'default',
 		},
+		Flex: {
+			display: 'flex',
+		},
 		Container: {
 			padding: 3,
 			article: {
 				marginBottom: 8,
 				h2: {
 					margin: 0,
-					marginBttom: 2
+					marginBttom: 2,
 				},
 				p: {
 					margin: 0,
