@@ -9,6 +9,7 @@ module.exports = {
 	},
 	plugins: [
 		'gatsby-theme-interface',
+		'gatsby-theme-seo',
 		{
 			resolve: 'gatsby-plugin-mdx',
 			options: {

@@ -2,11 +2,13 @@
 import React from 'react'
 import { Layout, Container, Flex, jsx } from 'theme-ui'
 import { Link } from 'gatsby'
+import Seo from 'gatsby-theme-seo/src/components/Seo'
 
 import resume from '../assets/Imed_Adel_Resume.pdf'
 
 const Page = () => (
 	<Layout>
+		<Seo />
 		<Container>
 			<div>
 				<h1 sx={{ fontSize: 14, marginTop: '30vh' }}>Imed Adel.</h1>
