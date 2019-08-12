@@ -103,7 +103,7 @@ const theme = {
 			fontWeight: 'bold',
 			lineHeight: 'heading',
 			margin: 0,
-			marginTop: 4,
+			marginTop: 8,
 		},
 		h2: {
 			fontSize: 10,
@@ -111,7 +111,19 @@ const theme = {
 			fontWeight: 'bold',
 			lineHeight: 'heading',
 			margin: 0,
-			marginTop: 4,
+			marginTop: 14,
+		},
+		h3: {
+			marginTop: 14,
+		},
+		h4: {
+			marginTop: 14,
+		},
+		h5: {
+			marginTop: 14,
+		},
+		h6: {
+			marginTop: 14,
 		},
 		a: {
 			color: 'primary',
