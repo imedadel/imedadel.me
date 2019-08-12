@@ -1,5 +1,5 @@
 {
-	"name": "gatsby-theme-blog",
+	"name": "gatsby-theme-interface",
 	"version": "0.0.1",
 	"license": "MIT",
 	"main": "index.js",
@@ -9,20 +9,20 @@
 		"clean": "gatsby clean"
 	},
 	"peerDependencies": {
-		"gatsby": "^2.13.57",
+		"gatsby": "^2.13.58",
 		"react": "^16.9.0",
 		"react-dom": "^16.9.0"
 	},
 	"devDependencies": {
-		"gatsby": "^2.13.57",
+		"gatsby": "^2.13.58",
 		"react": "^16.9.0",
 		"react-dom": "^16.9.0"
 	},
 	"dependencies": {
-		"@mdx-js/mdx": "^1.2.2",
+		"@emotion/core": "^10.0.15",
+		"@emotion/styled": "^10.0.15",
 		"@mdx-js/react": "^1.2.2",
-		"gatsby-plugin-mdx": "^1.0.23",
-		"gatsby-source-filesystem": "^2.1.9",
-		"gatsby-theme-interface": "*"
+		"gatsby-theme-ui": "^0.2.0",
+		"theme-ui": "^0.2.31"
 	}
 }

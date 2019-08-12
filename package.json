@@ -3,6 +3,7 @@
 	"workspaces": [
 		"www",
 		"gatsby-theme-blog",
-		"gatsby-theme-homepage"
+		"gatsby-theme-homepage",
+		"gatsby-theme-interface"
 	]
 }

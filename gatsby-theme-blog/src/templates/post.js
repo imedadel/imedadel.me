@@ -1,6 +1,7 @@
 import React from 'react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { Link } from 'gatsby'
+import { Layout, Main, Header, Container, Footer } from 'theme-ui'
 
 // import SEO from '../components/SEO'
 // import { rhythm } from '../utils/typography'
@@ -10,22 +11,8 @@ import { Link } from 'gatsby'
 const Post = ({ pageContext: { node } }) => {
 	// comment
 	return (
-		<div
-			style={{
-				fontSize: `2vw`,
-				width: `64vw`,
-				margin: `auto`,
-				fontFamily: `Manrope, system-ui`,
-				webkitFontSmoothing: `antialiased`,
-				textRendering: `optimizeLegibility`,
-			}}
-		>
-			<header
-				style={{
-					display: `flex`,
-					justifyContent: `space-between`
-				}}
-			>
+		<Layout>
+			<Header>
 				{/* <SEO
 					title={node.headings[0].value}
 					description={node.frontmatter.desc}
@@ -53,17 +40,19 @@ const Post = ({ pageContext: { node } }) => {
 				>
 					<h2>Blog</h2>
 				</Link>
-			</header>
-			<main>
+			</Header>
+			<Main>
+				<Container>
 				<MDXRenderer>{node.body}</MDXRenderer>
-			</main>
-			<footer>
+				</Container>
+			</Main>
+			<Footer>
 				<a href={``}>Resume</a>,{' '}
 				<a href='https://www.linkedin.com/in/imedadel'>Linkedin</a>,{' '}
 				<a href='https://github.com/ImedAdel'>Github</a>,{' '}
 				<a href='https://twitter.com/Imed_Adel'>Twitter</a>.
-			</footer>
-		</div>
+			</Footer>
+		</Layout>
 	)
 }
 

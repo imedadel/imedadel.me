@@ -8,6 +8,7 @@ module.exports = {
 		siteUrl: 'http:s://imedadel.me',
 	},
 	plugins: [
+		'gatsby-theme-interface',
 		{
 			resolve: 'gatsby-plugin-mdx',
 			options: {
