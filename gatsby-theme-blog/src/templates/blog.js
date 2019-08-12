@@ -29,12 +29,12 @@ const Page = ({ pageContext: { nodes } }) => (
 			<Container>
 				{nodes.map(node => (
 					<article key={node.fields.slug}>
-						<h2>
+						<h2 className='title'>
 							<Link sx={{ color: 'primary' }} to={`${node.fields.slug}`}>
 								{node.headings[0].value}
 							</Link>
 						</h2>
-						<p>{node.frontmatter.desc}</p>
+						{/* <p className='description'>{node.frontmatter.desc}</p> */}
 					</article>
 				))}
 			</Container>

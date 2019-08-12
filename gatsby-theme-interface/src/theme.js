@@ -51,6 +51,7 @@ const theme = {
 		},
 		Main: {
 			margin: '0 auto',
+			marginTop: 8,
 			maxWidth: 'max',
 			width: 'default',
 		},
@@ -66,12 +67,17 @@ const theme = {
 			padding: 3,
 			article: {
 				marginBottom: 8,
-				h2: {
+				'.title': {
 					margin: 0,
 					marginBttom: 2,
+					fontSize: 8,
+					a: {
+						textDecoration: 'none',
+					}
 				},
-				p: {
+				'.description': {
 					margin: 0,
+					fontSize: 3
 				},
 			},
 		},
