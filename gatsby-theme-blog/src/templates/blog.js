@@ -6,9 +6,7 @@ import {
 	Main,
 	Header,
 	Container,
-	Footer,
 	Styled,
-	Article,
 	jsx,
 } from 'theme-ui'
 
@@ -39,12 +37,6 @@ const Page = ({ pageContext: { nodes } }) => (
 				))}
 			</Container>
 		</Main>
-		<Footer>
-			<a href={``}>Resume</a>,{' '}
-			<a href='https://www.linkedin.com/in/imedadel'>Linkedin</a>,{' '}
-			<a href='https://github.com/ImedAdel'>Github</a>,{' '}
-			<a href='https://twitter.com/Imed_Adel'>Twitter</a>.
-		</Footer>
 	</Layout>
 )
 

@@ -1,7 +1,8 @@
+/** @jsx jsx */
 import React from 'react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { Link } from 'gatsby'
-import { Layout, Main, Header, Container, Footer } from 'theme-ui'
+import { Layout, Main, Header, Container, jsx } from 'theme-ui'
 
 // import SEO from '../components/SEO'
 // import { rhythm } from '../utils/typography'
@@ -20,9 +21,10 @@ const Post = ({ pageContext: { node } }) => {
 				/> */}
 				<Link
 					to={`/`}
-					style={{
+					sx={{
 						textDecoration: `none`,
-						marginBottom: `1.5rem`,
+						marginBottom: 1,
+						color: 'primary'
 					}}
 					title={`Go to homepage`}
 					role={`navigation`}
@@ -31,11 +33,12 @@ const Post = ({ pageContext: { node } }) => {
 				</Link>
 				<Link
 					to={`/blog`}
-					style={{
+					sx={{
 						textDecoration: `none`,
-						marginBottom: `1.5rem`,
+						marginBottom: 1,
+						color: 'primary'
 					}}
-					title={`Go to homepage`}
+					title={`Go to blog page`}
 					role={`navigation`}
 				>
 					<h2>Blog</h2>
@@ -46,12 +49,6 @@ const Post = ({ pageContext: { node } }) => {
 				<MDXRenderer>{node.body}</MDXRenderer>
 				</Container>
 			</Main>
-			<Footer>
-				<a href={``}>Resume</a>,{' '}
-				<a href='https://www.linkedin.com/in/imedadel'>Linkedin</a>,{' '}
-				<a href='https://github.com/ImedAdel'>Github</a>,{' '}
-				<a href='https://twitter.com/Imed_Adel'>Twitter</a>.
-			</Footer>
 		</Layout>
 	)
 }

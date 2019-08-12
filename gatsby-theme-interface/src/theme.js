@@ -73,12 +73,15 @@ const theme = {
 					fontSize: 8,
 					a: {
 						textDecoration: 'none',
-					}
+					},
 				},
-				'.description': {
-					margin: 0,
-					fontSize: 3
-				},
+			},
+			'.description': {
+				margin: 0,
+				fontSize: 3,
+				borderLeft: '1px solid',
+				borderBottom: '1px solid',
+				borderRadiusBottomLeft: '4px'
 			},
 		},
 		article: {
