@@ -1,7 +1,11 @@
 module.exports = {
+	siteMetadata: {
+		siteUrl: `https://imedadel.me`,
+	},
 	plugins: [
 		`gatsby-theme-blog`,
 		`gatsby-theme-homepage`,
+		`gatsby-plugin-sitemap`,
 		{
 			resolve: `gatsby-plugin-google-analytics`,
 			options: {
