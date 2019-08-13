@@ -15,16 +15,19 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: "Imed Adel",
-				short_name: "Imed Adel",
-				start_url: "/",
-				background_color: "#fff",
-				theme_color: "#000",
+				name: 'Imed Adel',
+				short_name: 'Imed Adel',
+				start_url: '/',
+				background_color: '#fff',
+				theme_color: '#000',
 				// Enables "Add to Homescreen" prompt and disables browser UI (including back button)
 				// see https://developers.google.com/web/fundamentals/web-app-manifest/#display
-				display: "standalone",
-				icon: "src/assets/icon.png", // This path is relative to the root of the site.
+				display: 'standalone',
+				icon: 'src/assets/icon.png', // This path is relative to the root of the site.
 			},
 		},
+		`gatsby-plugin-netlify`,
+		`gatsby-plugin-netlify-cache`,
+		`gatsby-plugin-offline`,
 	],
 }
