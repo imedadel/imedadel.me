@@ -27,7 +27,6 @@
 		"gatsby-theme-interface": "*",
 		"gatsby-theme-seo": "*",
 		"prism-theme-night-owl": "^1.2.0",
-		"prismjs": "^1.17.1",
-		"typeface-manrope": "^1.0.0"
+		"prismjs": "^1.17.1"
 	}
 }
