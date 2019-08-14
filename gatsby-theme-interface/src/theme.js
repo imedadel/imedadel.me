@@ -94,7 +94,7 @@ const theme = {
 				marginBottom: 10,
 				p: {
 					margin: 0,
-				}
+				},
 			},
 		},
 		article: {
@@ -131,6 +131,9 @@ const theme = {
 		},
 		a: {
 			color: 'primary',
+		},
+		pre: {
+			borderRadius: 4,
 		},
 	},
 }
