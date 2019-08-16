@@ -133,7 +133,6 @@ const theme = {
 			justifyContent: 'space-between',
 			fontWeight: 'bold',
 			margin: '0 auto',
-			maxWidth: 'max',
 			padding: 3,
 			width: 'default',
 		},
@@ -144,7 +143,6 @@ const theme = {
 		},
 		Footer: {
 			margin: '0 auto',
-			maxWidth: 'max',
 			width: 'default',
 		},
 		Flex: {
