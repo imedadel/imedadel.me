@@ -140,7 +140,6 @@ const theme = {
 		Main: {
 			margin: '0 auto',
 			marginTop: 8,
-			maxWidth: 'max',
 			width: 'default',
 		},
 		Footer: {
