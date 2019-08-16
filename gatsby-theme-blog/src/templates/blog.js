@@ -3,17 +3,24 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Layout, Main, Header, Container, Styled, jsx } from 'theme-ui'
 import Seo from 'gatsby-theme-seo/src/components/Seo'
+import TakeMeBack from 'gatsby-theme-interface/src/components/TakeMeBack'
 
 const Page = ({ pageContext: { nodes } }) => (
 	<Styled.root>
 		<Layout>
+			<Seo title='Blog' slug='blog' />
+			<TakeMeBack path={`/`} />
 			<Header>
-				<Seo title='Blog' slug='blog' />
-				<Styled.h1>Imed Adel.</Styled.h1>
+				<h1
+					sx={{
+						fontWeight: 200,
+						marginBottom: 0,
+					}}
+				>
+					Imed's Blog
+				</h1>
 			</Header>
 			<Main>
-				{/* <Link to={`/`} style={{textDecoration: `none`}} title={`Go to homepage`} role={`navigation`}><h2><span role="img" aria-label="Four-Leaf Clover">🍀</span></h2></Link> */}
-				{/* {console.log(data)} */}
 				<Container>
 					{nodes.map(node => (
 						<article key={node.fields.slug}>

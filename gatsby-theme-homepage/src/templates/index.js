@@ -12,17 +12,22 @@ const Page = () => (
 			<Seo />
 			<Container>
 				<div>
-					<h1 sx={{ fontSize: 14, marginTop: '30vh' }}>Imed Adel.</h1>
+					<h1
+						sx={{
+							fontSize: 14,
+							marginTop: '24vh',
+							fontWeight: 300,
+							textAlign: 'center',
+						}}
+					>
+						Imed Adel.
+					</h1>
 				</div>
 				<Flex
-					sx={{ fontSize: 8, marginTop: 6, justifyContent: 'space-between' }}
+					sx={{ fontSize: 8, marginTop: 14, justifyContent: 'space-between' }}
 				>
 					<Link to={'/blog'} sx={{ color: 'primary', textDecoration: 'none' }}>
 						Blog
-					</Link>
-					<Link sx={{ color: 'primary', textDecoration: 'none' }}>Area 51</Link>
-					<Link sx={{ color: 'primary', textDecoration: 'none' }}>
-						Portfolio
 					</Link>
 					<a
 						href='mailto:aadelimed@gmail.com'
@@ -30,10 +35,6 @@ const Page = () => (
 					>
 						Contact
 					</a>
-				</Flex>
-				<Flex
-					sx={{ fontSize: 8, marginTop: 4, justifyContent: 'space-between' }}
-				>
 					<a href={resume} sx={{ color: 'primary', textDecoration: 'none' }}>
 						Resume
 					</a>

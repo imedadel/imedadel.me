@@ -1,3 +1,6 @@
+import { isAbsolute } from "path";
+import { unstyle } from "ansi-colors";
+
 const tracking = (z, a = -0.0223, b = 0.185, c = -0.1745) =>
 	a + b * Math.exp(z * c)
 
@@ -160,6 +163,11 @@ const theme = {
 					fontWeight: 400,
 					a: {
 						textDecoration: 'none',
+						transition: 'all .4s ease-out',
+						':hover': {
+							paddingLeft: 6,
+							color: 'primary',
+						}
 					},
 				},
 			},
