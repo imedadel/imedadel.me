@@ -9,9 +9,9 @@
 		"react-dom": "^16.9.0"
 	},
 	"devDependencies": {
-		"gatsby": "^2.13.59",
-		"react": "^16.9.0",
-		"react-dom": "^16.9.0"
+		"gatsby": "2.13.59",
+		"react": "16.9.0",
+		"react-dom": "16.9.0"
 	},
 	"dependencies": {
 		"gatsby-plugin-react-helmet": "^3.1.3",

@@ -14,9 +14,9 @@
 		"react-dom": "^16.9.0"
 	},
 	"devDependencies": {
-		"gatsby": "^2.13.57",
-		"react": "^16.9.0",
-		"react-dom": "^16.9.0"
+		"gatsby": "2.13.57",
+		"react": "16.9.0",
+		"react-dom": "16.9.0"
 	},
 	"dependencies": {
 		"gatsby-theme-interface": "*",
