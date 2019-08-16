@@ -23,6 +23,7 @@
 		"@emotion/styled": "^10.0.15",
 		"@mdx-js/react": "^1.2.2",
 		"gatsby-theme-ui": "^0.2.0",
-		"theme-ui": "^0.2.31"
+		"theme-ui": "^0.2.31",
+		"typeface-inter": "^3.7.0"
 	}
 }
