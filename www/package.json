@@ -14,7 +14,7 @@
 		"gatsby-plugin-manifest": "2.2.12",
 		"gatsby-plugin-netlify": "2.1.10",
 		"gatsby-plugin-netlify-cache": "1.2.0",
-		"gatsby-plugin-offline": "2.2.10",
+		"gatsby-plugin-offline": "3.0.0",
 		"gatsby-plugin-sitemap": "2.2.9",
 		"gatsby-theme-blog": "*",
 		"gatsby-theme-homepage": "*",
