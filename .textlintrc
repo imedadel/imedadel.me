@@ -1,0 +1,21 @@
+{
+  "filters": {},
+  "rules": {
+    "@textlint-rule/no-unmatched-pair": true,
+    "abbr-within-parentheses": true,
+    "alex": true,
+    "apostrophe": true,
+    "common-misspellings": true,
+    "diacritics": true,
+    "en-capitalization": true,
+    "ginger": true,
+    "no-start-duplicated-conjunction": true,
+    "period-in-list-item": true,
+    "rousseau": true,
+    "spelling": true,
+    "stop-words": true,
+    "terminology": true,
+    "unexpanded-acronym": true,
+    "write-good": true
+  }
+}
