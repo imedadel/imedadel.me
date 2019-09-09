@@ -25,7 +25,7 @@ export default IndexPage
 
 ## Use Window Location
 
-First, check whether `js÷window` is defined or not and then use `js÷window.location.replace()` to do the redirection.
+First, check if `js÷window` is defined and then use `js÷window.location.replace()` to do the redirection.
 
 ```js
 import React from "react"
@@ -41,7 +41,7 @@ export default IndexPage
 
 ## Use createRedirect from Gatsby Actions
 
-I kept this to the end because it didn't work for me when I tried it. But Gatsby offers an action named `createRedirect`, which you can use in `gatsby-node.js`.
+I kept this to the end because it didn’t work for me when I tried it. But Gatsby offers an action named `createRedirect`, which you can use in `gatsby-node.js`.
 
 ```js
 exports.createPages = ({ actions }) => {
@@ -57,5 +57,5 @@ exports.createPages = ({ actions }) => {
 
 - [Creating and Modifying Pages, Gatsbyjs.org](https://www.gatsbyjs.org/docs/creating-and-modifying-pages/)
 - [Node APIs, Gatsbyjs.org](https://www.gatsbyjs.org/docs/node-apis/)
-- [createRedirect, Actions, Gatsbyjs.org](https://www.gatsbyjs.org/docs/actions/#createRedirect)
-- [Window.location, MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/location)
+- [`createRedirect`, Actions, Gatsbyjs.org](https://www.gatsbyjs.org/docs/actions/#createRedirect)
+- [`Window.location`, MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/location)

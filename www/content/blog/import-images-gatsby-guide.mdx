@@ -15,7 +15,7 @@ How to import images in your GatsbyJS project.
 
 ### Installing plugins
 
-For this method, you will have to import every image one-by-one, however, your images will be processed and optimized for the best performance. Usually, this is the method that you'd want to use.
+For this method, you will have to import every image one-by-one. Your images will be processed and optimized for the best performance. In most cases, this is the method that you'd want to use.
 
 First, install `gatsby-image`, `gatsby-transformer-sharp` and `gatsby-plugin-sharp` using the command:
 
@@ -56,14 +56,14 @@ module.exports = {
 
 ### Querying images in pages and components
 
-In order to query images using GraphQL in your pages and your components, you will have to import `gatsby-image` at the top of the file. In this example, I am going to assume that you are using a [`StaticQuery`](https://www.gatsbyjs.org/docs/static-query/) for your component or your page. If that's the case, I highlighy recommend using the [`StaticQuery` snippet for VS Code](/gatsby-staticquery-vs-code-snippet).
+To query images using GraphQL in your pages and your components, you will have to import `gatsby-image` at the top of the file. In this example, I am going to assume that you are using a [`StaticQuery`](https://www.gatsbyjs.org/docs/static-query/) for your component or your page. If that's the case, I highlighy recommend using the [`StaticQuery` snippet for VS Code](/gatsby-staticquery-vs-code-snippet).
 
 ```js
 import React from "react"
 import Img from "gatsby-image" // highlight-line
 ```
 
-then query your image using GraphQL
+Then query your image using GraphQL.
 
 ```js
 const myQuery = graphql`
@@ -81,9 +81,9 @@ const myQuery = graphql`
 
 A couple of notes here:
 
-1. `nameOfImage` could be anything. You will use it later in your JSX.
-2. `relativePathToYourImage.png` is the relative path to your with the `images` file defined above---in `gatsby-config.js`---as a base. You can of course change `relativePath` to your liking.
-3. `fixed` is for images with a fixed width and height. It generates images for different screen _resolutions_. You can use the `height` and `width` to determine the dimensions of your image. However, if you want to make your image fluid or responsive, that is, with multiple sizes based on the screen _size_, you would have to use `fluid` instead of `fixed`. And instead of a `height` and `width`, you have to define either a `maxWidth` or `maxHeight` (or both).
+1. `nameOfImage` could be anything. You will use it later in your JSX
+2. `relativePathToYourImage.png` is the relative path to your with the `images` file defined above---in `gatsby-config.js`---as a base. You can change `relativePath` to your liking
+3. `fixed` is for images with a fixed width and height. It generates images for different screen _resolutions_. You can use the `height` and `width` to determine the dimensions of your image. To make your image fluid or responsive, that is, with multiple sizes based on the screen _size_, you would have to use `fluid` instead of `fixed`. And instead of a `height` and `width`, you have to define either a `maxWidth` or `maxHeight` (or both)
 
 ```js
 const myQuery = graphql`
@@ -99,7 +99,7 @@ const myQuery = graphql`
 `
 ```
 
-Finally, you can use your image in your component by using `Img` and passing it the image as a property. For instance, for fluid images you would use `jsx÷<Img fluid={data.nameOfImage.childImageSharp.fluid} />` and for fixed images, you would use `jsx÷<Img fixed={data.nameOfImage.childImageSharp.fixed} />`.
+You can use your image in your component by using `Img` and passing it the image as a property. For fluid images you would use `jsx÷<Img fluid={data.nameOfImage.childImageSharp.fluid} />`. And for fixed images, you would use `jsx÷<Img fixed={data.nameOfImage.childImageSharp.fixed} />`.
 
 A component with images imported using GraphQL would look like this:
 
@@ -148,7 +148,7 @@ export default () => (
 
 ## Using Webpack Import
 
-With Webpack, you can import a file directly in your component or page without all of the configuration of `gatsby-image`. This is especially useful with a large number of images, for quick prototyping, or if your images are already optimized and minified.
+With Webpack, you can import a file directly in your component or page without configuring `gatsby-image`. This is useful with a large number of images, for quick prototyping, or if your images are already optimized and minified.
 
 Note that importing images that are less than 10000 bytes returns a data URI instead of a path. This applies to the following file extensions: svg, jpg, jpeg, png, gif, mp4, webm, wav, mp3, m4a, aac, and oga.
 
@@ -185,16 +185,16 @@ As the number of images grows, importing every single image can become tedious. 
 const AnotherComponent = () => <img src={require("./pathToTheImage.png")} />
 ```
 
-### Require All Images
+### Require all images
 
-Similar to the import method above, you can require all images using this function:
+Like the import method above, you can require all images using this function:
 
 ```js
 const images = require.context("../images", true)
 const imagePath = name => images(name, true)
 ```
 
-Specify where the images are stored and then use it like so
+Specify where the images are stored and then use it like so:
 
 ```jsx
 const AndAnotherComponent = () => (
@@ -204,7 +204,7 @@ const AndAnotherComponent = () => (
 
 ## Using The Static Folder
 
-Finally, if you don't have time for all of this and you don't really worry about optimization 🙄, you can add a `static` folder to the root of your project, add any images you want there, and then easily reference images like so:
+If you don't have time for all of this and you don't really worry about optimization 🙄, you can add a `static` folder to the root of your project, add any images you want there, and then easily reference images like so:
 
 ```jsx
 const Yup = () => <img src="pathToTheImage.png" />
