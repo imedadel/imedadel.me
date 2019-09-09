@@ -1,5 +1,10 @@
 {
   "filters": {},
+  "plugins": {
+        "@textlint/markdown": {
+            "extensions": [".mdx"]
+        }
+    },
   "rules": {
     "@textlint-rule/no-unmatched-pair": true,
     "abbr-within-parentheses": true,
