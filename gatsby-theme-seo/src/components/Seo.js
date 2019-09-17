@@ -5,7 +5,7 @@ const Seo = ({ title, desc, slug }) => (
 	<Helmet defer={false}>
 		<meta charSet="utf-8" />
 		<title>{title ? `${title} — Imed Adel` : `Imed Adel`}</title>
-		<link rel="canonical" href="https://imedadel.me" />
+		<link rel="canonical" href={`https://imedadel.me/${slug ? slug : ``}`} />
 		<html lang="en" />
 		<meta
 			name="viewport"
