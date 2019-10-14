@@ -1230,6 +1230,11 @@
   resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-4.2.4.tgz#ae569bd76364040939044d057d5a56284563a7af"
   integrity sha512-ggiixpScxgdMY42b6UafD1iUboSvl9k3vGA9kynP+kd6mEhTDzxtb1aHPDAnV+DpAEw4qpHMz72GBFkX/iOSFw==
 
+"@textlint/ast-node-types@^4.2.5":
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/@textlint/ast-node-types/-/ast-node-types-4.2.5.tgz#ae13981bc8711c98313a6ac1c361194d6bf2d39b"
+  integrity sha512-+rEx4jLOeZpUcdvll7jEg/7hNbwYvHWFy4IGW/tk2JdbyB3SJVyIP6arAwzTH/sp/pO9jftfyZnRj4//sLbLvQ==
+
 "@textlint/ast-traverse@^2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@textlint/ast-traverse/-/ast-traverse-2.1.5.tgz#0b9e4b95c8e30c899fe66fe066791ad2a16f8b81"
@@ -1311,6 +1316,19 @@
     traverse "^0.6.6"
     unified "^6.1.6"
 
+"@textlint/markdown-to-ast@^6.1.6":
+  version "6.1.6"
+  resolved "https://registry.yarnpkg.com/@textlint/markdown-to-ast/-/markdown-to-ast-6.1.6.tgz#9d081a64d4a95a4958f5cebc75b1efdb7cdaf7ab"
+  integrity sha512-xIaMn6gW1Ig+M+2Xcdbxt4cgOqWJSuB0pIO98KppQyqPzQ5k5deea7SBABqLZiKeNIxLl+2C1vfIfnBFFjxlmg==
+  dependencies:
+    "@textlint/ast-node-types" "^4.2.5"
+    debug "^4.1.1"
+    remark-frontmatter "^1.2.0"
+    remark-parse "^5.0.0"
+    structured-source "^3.0.2"
+    traverse "^0.6.6"
+    unified "^6.1.6"
+
 "@textlint/module-interop@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@textlint/module-interop/-/module-interop-1.0.1.tgz#765ca9ccb9b66657d65061d3546b3fe51e48c983"
@@ -1335,7 +1353,14 @@
   dependencies:
     "@textlint/ast-node-types" "^4.2.4"
 
-"@textlint/textlint-plugin-markdown@5.1.8", "@textlint/textlint-plugin-markdown@^5.1.8":
+"@textlint/textlint-plugin-markdown@5.1.9":
+  version "5.1.9"
+  resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-markdown/-/textlint-plugin-markdown-5.1.9.tgz#e7ac7a990295af3c085fd71dc3d14fd50f5e2278"
+  integrity sha512-5bYPGid5dIWBjY3oKhmWmeWvBfl04ZGp0c4OD24MZHRkxrARKJg7i+hR7qhedAGdkeZ33fxQt/NILvbuLSvQVw==
+  dependencies:
+    "@textlint/markdown-to-ast" "^6.1.6"
+
+"@textlint/textlint-plugin-markdown@^5.1.8":
   version "5.1.8"
   resolved "https://registry.yarnpkg.com/@textlint/textlint-plugin-markdown/-/textlint-plugin-markdown-5.1.8.tgz#23cf2e5a82aeb4c557434eb687dbd58abca1c200"
   integrity sha512-x38FOJzbgz1DLc5inRz0qyjd879CMvWkeUJc0tcuYvZWEoQ7RS5YwjQK3Q9C3LGGM2JGy4Wnkr6jBIBFCBBbdA==
