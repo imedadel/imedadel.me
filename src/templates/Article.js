@@ -24,10 +24,8 @@ function ArticleTemplate({ pageContext: { node } }) {
 				<main>
 					<h1
 						css={css`
-							font-size: 3.5rem;
 							font-weight: 700;
 							letter-spacing: -0.02em;
-							line-height: 1.1;
 							margin-bottom: 0.125em;
 						`}
 					>
@@ -35,11 +33,9 @@ function ArticleTemplate({ pageContext: { node } }) {
 					</h1>
 					<p
 						css={css`
-							font-size: 2rem;
-							letter-spacing: -0.02em;
+							font-size: 1.618rem;
+							letter-spacing: -0.01em;
 							font-weight: 300;
-							line-height: 1.4;
-							margin-bottom: 0.75em;
 							color: dimgrey;
 						`}
 					>
