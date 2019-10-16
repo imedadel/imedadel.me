@@ -3,17 +3,19 @@ import { css, jsx } from '@emotion/core'
 import { Link } from 'gatsby'
 
 const headerLink = css`
-	font-size: 0.9em;
+	font-size: 1rem;
+	line-height: 1.5;
 	display: block;
-	padding: 0.5em 1em;
+	padding: 1em;
 	text-decoration: none;
 	text-transform: uppercase;
+	background: none;
 `
 const headingStyle = css`
 	grid-row: 1;
 	grid-column: 1 / 4;
 	align-self: start;
-	font-size: 1.5rem;
+	font-size: 1.618rem;
 `
 
 function ConditinalHeading({ isHomepage, children }) {
