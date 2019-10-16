@@ -6,15 +6,13 @@ function Section({ title, description, children }) {
 		<section
 			css={css`
 				margin-top: 2em;
-				margin-bottom: 2.25em;
+				margin-bottom: 2.5em;
 			`}
 		>
 			<h2
 				css={css`
-					font-size: 2.5rem;
 					font-weight: 700;
 					letter-spacing: -0.02em;
-					line-height: 1.1;
 					margin-bottom: 0.125em;
 				`}
 				id={title}
@@ -23,11 +21,10 @@ function Section({ title, description, children }) {
 			</h2>
 			<p
 				css={css`
-					font-size: 1.75rem;
+					font-size: calc(1rem * 1.618);
 					letter-spacing: -0.02em;
 					font-weight: 400;
-					line-height: 1.4;
-					margin-bottom: 0.75em;
+					line-height: 1;
 					color: dimgrey;
 				`}
 			>
