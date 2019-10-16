@@ -48,10 +48,8 @@ function ArticleTemplate({ pageContext: { node } }) {
 					<div
 						dangerouslySetInnerHTML={{ __html: node.html }}
 						css={css`
-							font-size: 1rem;
 							font-weight: 400;
 							letter-spacing: -0.01em;
-							line-height: 1.5;
 
 							> :not(img),
 							> :not(picture),
@@ -61,40 +59,6 @@ function ArticleTemplate({ pageContext: { node } }) {
 								padding-left: 5rem;
 							}
 
-							p,
-							pre {
-								margin-top: 0.25em;
-								margin-bottom: 1.75em;
-							}
-							p + p {
-								margin-bottom: 1.25em;
-							}
-
-							h2 {
-								font-size: 2.25rem;
-							}
-							h3 {
-								font-size: 1.75rem;
-							}
-							h4 {
-								font-size: 1.25rem;
-							}
-							h5 {
-								font-size: 1.125rem;
-							}
-							h6 {
-								font-weight: 600;
-							}
-
-							h2,
-							h3,
-							h4,
-							h5,
-							h6 {
-								margin-bottom: 0.125em;
-								margin-top: 1em;
-							}
-
 							pre,
 							:not(pre) code {
 								background-color: pink;
@@ -102,7 +66,9 @@ function ArticleTemplate({ pageContext: { node } }) {
 								padding: 0.125em;
 								border-radius: 4px;
 								letter-spacing: 0;
+								font-family: 'Fira Code', monospace;
 							}
+
 							pre {
 								padding: 0.75em;
 								overflow-x: auto;
