@@ -7,6 +7,7 @@ import Container from '../components/Container'
 import Header from '../components/Header'
 import Section from '../components/Section'
 import ArticlesList from '../components/ArticlesList'
+import ProblemSitesList from '../components/ProblemSitesList'
 import Seo from '../components/Seo'
 
 function IndexPage() {
@@ -23,6 +24,12 @@ function IndexPage() {
 						description='I write about problems that I face while building things.'
 					>
 						<ArticlesList />
+					</Section>
+					<Section
+						title='Problem Solving'
+						description='I try solving as many problems as possible in Java, Python, C++, Go, and Rust.'
+					>
+						<ProblemSitesList />
 					</Section>
 				</main>
 			</Container>
