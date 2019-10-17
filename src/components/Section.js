@@ -24,7 +24,7 @@ function Section({ title, description, children }) {
 					font-size: calc(1rem * 1.618);
 					letter-spacing: -0.02em;
 					font-weight: 400;
-					line-height: 1;
+					line-height: 1.125;
 					color: dimgrey;
 				`}
 			>
