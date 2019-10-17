@@ -34,11 +34,13 @@ function ProblemSitesList() {
 			`}
 		>
 			{problemSites.map(({ name, link }) => (
-				<h3>
-					<a href={link} target='_blank' title={name}>
-						{name}
-					</a>
-				</h3>
+				<article>
+					<h3>
+						<a href={link} target='_blank' title={name}>
+							{name}
+						</a>
+					</h3>
+				</article>
 			))}
 		</div>
 	)
