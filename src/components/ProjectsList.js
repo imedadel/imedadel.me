@@ -3,8 +3,14 @@ import { css, jsx } from '@emotion/core'
 
 const projectsList = [
 	{
+		name: 'Centige',
+		link: 'https://centige.com',
+		description:
+			'A collaborative web app and website builder.',
+	},
+	{
 		name: 'SpacedLeet',
-		link: 'https://spacedleet.imedadel.me',
+		link: 'https://spacedleet.com',
 		description:
 			'A chrome extension to prepare for  interviews using Spaced Repetition and LeetCode.',
 	},
